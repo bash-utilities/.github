@@ -1,13 +1,13 @@
 # Contributing to Bash Utilities
 [heading__title]:
-  #Contributing-to-Bash-Utilities
+  #contributing-to-bash-utilities
   "&#x2B06; Top of this document"
 
 
 Thanks for even thinking about it!
 
 
-As this Organization grows portions of this document may be moved to GitHub Pages; the text within this document are not _set in stone_ rules but guidelines, and much like other files maintained by this Organization the following may be edited via a _`Pull Request`_.
+The text within this document are not _set in stone_ rules but guidelines, and much like other files maintained by Bash Utilities the following may be edited via a _`Pull Request`_.
 
 
 
@@ -29,18 +29,18 @@ As this Organization grows portions of this document may be moved to GitHub Page
 
 - [Style Guidelines][heading__style_guidelines]
 
-  - [Bash][heading__bash_style_guidelines]
-  - [MarkDown][heading__markDown-style-guidelines]
+  - [:shell: Bash][heading__style_guidelines__bash]
+  - [:memo: MarkDown][heading__style_guidelines__markdown]
 
 - [Local Development Setup][heading__local_development_setup]
 
-  - [Linux or Mac][heading__linux_development_setup]
+  - [Linux][heading__linux_development_setup]
   - [Windows][heading__windows_development_setup]
 
 - [Git Tips][heading__git_tips]
 
-  - [Git Commits][heading__git_commit_tips]
-  - [Git Branching][heading__git_branch_tips]
+  - [Commits][heading__git_commit_tips]
+  - [Branching][heading__git_branch_tips]
 
     - [Development][heading__development_git_branches]
     - [Merging][heading__git_merge_tips]
@@ -58,14 +58,25 @@ As this Organization grows portions of this document may be moved to GitHub Page
 ## Code of Conduct
 [heading__code_of_conduct]:
   #code-of-conduct
-  "The TLDR for what is expected of Members"
+  "&#x1F6C3; A teaser pulled from contributor-covenant Code of Conduct"
 
 
-**TLDR**
-This Organization is a semiprofessional public place, _`Treat others as though they have access to your toothbrush`_, and _`Code and Facts should be seasoned with Levity and Tact`_. Review the [full-length version][branch__current__code_of_conduct] if so inclined.
+```
+## Scope
+
+This Code of Conduct applies both within project spaces and in public spaces
+when an individual is representing the project or its community. Examples of
+representing a project or community include using an official project e-mail
+address, posting via an official social media account, or acting as an appointed
+representative at an online or offline event. Representation of a project may be
+further defined and clarified by project maintainers.
+
+```
 
 
-___
+Review the [whole thing][branch__current__code_of_conduct] to see what is expected of those that maintain code with Bash Utilities
+
+
 
 
 ## How to Contribute
@@ -74,7 +85,7 @@ ___
   ""
 
 
-The goal is, as always, useful code and documentation, though <sub>[![Support][badge__support]][relative_link__support]</sub> is always appreciated. Sharing Repositories maintained by this Organization is an excellent way to contribute if none of the following options are applicable, because the more eyes on a Code Base the more likely it seems that bugs will be found and fixed.
+The goal is, as always, useful code and documentation, though <sub>[![Support][badge__support]][branch__current__support]</sub> is always appreciated. Sharing Repositories maintained by this Organization is an excellent way to contribute if none of the following options are applicable, because the more eyes on a Code Base the more likely it seems that bugs will be found and fixed.
 
 
 ### Open Issues
@@ -83,8 +94,7 @@ The goal is, as always, useful code and documentation, though <sub>[![Support][b
   ""
 
 
-Join the <sub>[![Contributors][badge__contributors]][relative_link__network_members]</sub> issuing Pull Requests that close available <sub>[![Open Issues][badge__issues]][relative_link__issues]</sub>. [New Issues][relative_link__issues_new] may be opened for Reporting Bugs and Suggesting Enhancements. General tips on formatting [MarkDown](#markdown-style-guidelines) guidelines from this document are advisable to follow. However, please search for existing similar Issues first; example search for [`memory-leaks`](https://github.com/bash-utilities/trap-failure/search?q=memory-leaks&type=Issues) from the `trap-failure` repository.
-
+Join the <sub>[![Contributors][badge__contributors]][branch__current__network_members]</sub> issuing Pull Requests that close available <sub>[![Open Issues][badge__issues]][branch__current__issues]</sub>. [New Issues][branch__current__issues_new] may be opened for Reporting Bugs and Suggesting Enhancements. However, please search for existing similar Issues first; example search for [`memory-leaks`](https://github.com/bash-utilities/.github/search?q=memory-leaks&type=Issues) from the `.github` repository.
 
 ### Report Bugs
 [heading__report_bugs]:
@@ -92,10 +102,10 @@ Join the <sub>[![Contributors][badge__contributors]][relative_link__network_memb
   ""
 
 
-The [`bug_report.md`][branch__current__bug_report] Template should when opening a [New Issue][relative_link__issues_new]. Please be detailed and try to include all relevant information within the OP (Original Post). Additionally, if clarifications or more information is requested or discovered, then editing the OP is preferred to adding another post or opening a new issue.
+The [`bug_report.md`][branch__current__bug_report] Template should when opening a [New Issue][branch__current__issues_new]. Please be detailed and try to include all relevant information within the OP (Original Post). Additionally, if clarifications or more information is requested or discovered, then editing the OP is preferred to adding another post or opening a new issue.
 
 
-Bugs may also be reported via a Pull Request that suggests fixes, in which case skip opening an Issue and instead use the `:bug:` emoji as the first _word_ of the fix commit.
+Bugs may also be reported via a Pull Request that suggests fixes, in which case skip opening an Issue and instead use the `:bug:` emoji_word as the first _word_ of the fix commit.
 
 
 **Example Bug Report Pull Request**
@@ -130,7 +140,7 @@ git push forked master
   ""
 
 
-The [`feature_request.md`][branch__current__feature_request] Template may be used when opening a [New Issue][relative_link__issues_new]. Whenever possible provide example/pseudo code along with a detailed description of what needs solved. Or in other-words; napkin-sketches are permitted if it helps readers better understand the scope.
+The [`feature_request.md`][branch__current__feature_request] Template may be used when opening a [New Issue][branch__current__issues_new]. Whenever possible provide example/pseudo code along with a detailed description of what needs solved. Or in other-words; napkin-sketches are permitted if it helps readers better understand the scope.
 
 
 Or for faster consideration and adoption of new code, try adding new features via a Pull Request
@@ -164,7 +174,6 @@ EOF
 git push forked gh-pages
 ```
 
-
 ___
 
 
@@ -174,7 +183,7 @@ ___
   ""
 
 
-One does **not** have to use all of the following and this is intended to help keep things consistent between all repositories maintained by this Organization. Or in other-words, no-one _should_ get offended if a new line is forgotten or similar, but please do **not** break anything when issuing Pull Requests.
+No-one _should_ get offended if a new line is forgotten or similar, but please do **not** break anything when issuing Pull Requests.
 
 
 - Code that operates as intended is as important as documentation that is comprehensible, so do **not** sacrifice readability for anything
@@ -195,9 +204,9 @@ One does **not** have to use all of the following and this is intended to help k
 
 
 ### Bash Style Guidelines
-[heading__bash_style_guidelines]:
+[heading__style_guidelines__bash]:
   #bash-style-guidelines
-  ""
+  "&#x1F41A; Style Guidelines for Bash"
 
 
 - Lines should not exceed `120` columns wide for code and no more than `80` columns wide for comment blocks
@@ -271,11 +280,10 @@ failure(){
 ```
 
 
-
 ### MarkDown Style Guidelines
-[heading__markDown-style-guidelines]:
+[heading__style_guidelines__markdown]:
   #markdown-style-guidelines
-  ""
+  "&#x1F4DD; Style Guidelines for MarkDown"
 
 
 - There is no set column width limits for MarkDown files, but do not get carried away because the focus should be on getting readers _up to speed_
@@ -454,6 +462,7 @@ See [Somewhere Else][example__somewhere_else] for more details on something else
 > Note, any prefixed back-slashes (`\` ) should be removed from above example
 
 
+
 ___
 
 
@@ -463,14 +472,13 @@ ___
   ""
 
 
-For repositories that include a `_config.yml` file within a `gh-pages` branch then Jekyll is required for building documentation, see the [Jekyll Admin](https://github.com/S0AndS0/Jekyll_Admin) for setup and automation scripts built to make such setup tasks a little swifter. Otherwise most projects of this Organization only require a Bash shell that is reasonably up-to date.
+For repositories that include a `_config.yml` file within a `gh-pages` branch then Jekyll is required for building documentation, see the [Jekyll Admin][jekyll_admin] for setup and automation scripts built to make setup tasks a little swifter. Otherwise most projects of this Organization only require a Bash shell that is reasonably up-to date.
 
 
 ### Linux Development Setup
 [heading__linux_development_setup]:
   #linux-development-setup
   ""
-
 
 > The following steps and variable usage may also work on Mac, and may be Windows **if** a Bash shell is available.
 
@@ -536,7 +544,6 @@ _`git push forked master`_ _should_ push to the forked repository URL, and _`git
 [heading__windows_development_setup]:
   #windows-development-setup
   ""
-
 
 **Batch Variables**
 
@@ -604,12 +611,12 @@ This will not be an in-depth or exhaustive guide on `git` usage, as the preexist
 
 - First line should be separated from message content by three blank lines
 
-- While not required the following emoji may be used as the first _word_ of commit messages
+- While not required the following emoji_word may be used as the first _word_ of commit messages
 
   - :tada:             `:tada:` for `Initial Commit` of repository, **not** to be used when re-naming files
-  - :memo:             `:memo:` for documentation, new file or content, related commits
   - :art:              `:art:` for format and/or structure related changes
-  - :shell:            `:shell:` for shell script changes **not** related to bugs
+  - :shell: `:shell:` for changes to Bash files.
+  - :memo: `:memo:` for changes to MarkDown files.
   - :fire:             `:fire:` for deletion of files, code, or documentation
   - :hankey:           `:hankey:` please avoid needing to use as it's for when moving files or content between branches
   - :dizzy:            `:dizzy:` when re-naming or moving files within a branch, it'll happen for newer projects but need for use is to be avoided past version **`0.0.5`**
@@ -631,18 +638,18 @@ This will not be an in-depth or exhaustive guide on `git` usage, as the preexist
   - :white_check_mark: `:white_check_mark:` for adding tests
   - :green_heart:      `:green_heart:` when fixing Continuous Integration builds
 
+  - :ship:             `:ship:` when opening a Pull Request
   - :stars:            `:stars:` for accepting a Pull Request
   - :no_entry:         `:no_entry:` for rejecting a Pull Request
 
 
-
-- Additional notes should follow [Markdown Style Guidelines](#markdown-style-guidelines); except for headings as _`#`s_ are considered comments by default and thus ignored by many `commit` message handlers, see following example for other formatting differences
+Additional notes should follow [Markdown Style Guidelines][heading__style_guidelines__markdown]; except for headings as _`#`s_ are considered comments by default and thus ignored by many `commit` message handlers, see following example for other formatting differences
 
 
 ```Bash
 git add README.md
 git commit -F- <<'EOF'
-:memo: Added more content to readme file and spell-checked documentation
+:memo: Adds more readme content and spelling corrections
 
 
 
@@ -662,17 +669,17 @@ EOF
   ""
 
 
-This Organization encourages the use of _`orphan`_ branches for separating Code to be included in other projects from Documentation and Usage Examples. Non-orphaned development branches are encouraged when adding features or fixing bugs.
+There may be _`orphan`_ branches utilized by bash-utilities for separating Code to be included in other projects from Documentation and Usage Examples. Non-orphaned development branches are encouraged when adding features or fixing bugs.
 
 
-**`master`** branch may only contain;
+**`master`** branch generally contain;
 
 
 - _`lib`_ or _`shared-functions`_ directory, should **only** be used for files that directly support the _`script-name.sh`_ file, otherwise please split out reusable code to separate repositories for including as submodules within the `gh-pages` branch
 
 - `.git/` directory, required for version tracking and logging changes
 
-- _`readme.md`_ file, should be a _quick start_ documenting installation and/or usage
+- _`.github/README.md`_ file, should be a _quick start_ documenting installation and/or usage
 
 - _`script-name.sh`_ file, any dependencies should be listed within the _`.gitmodules`_ file under the **`gh-pages`** branch
 
@@ -686,9 +693,15 @@ This Organization encourages the use of _`orphan`_ branches for separating Code 
 
 - `.travis.yml` file, used by Travis CI for public automated tests of code
 
-- `README.md` file, should be a _quick start_ on development setup for fixing bugs or adding features via Pull Requests
+- `.github/README.md` file, should be a _quick start_ on development setup for fixing bugs or adding features via Pull Requests
 
 - `example_usage.sh` file, should demonstrate how code from the `master` branch is intended to be used
+
+
+All branches should contain a `LICENSE` file, each file should make reference to the license in use, and Pull Requests may be opened only if shared under the same license for a given file and/or repository.
+
+
+Depending upon language(s) utilized by a given repository the above file structure may change slightly, however, each branch should be kept _spartan_!
 
 
 #### Development Git Branches
@@ -786,19 +799,16 @@ ___
 ## License
 [heading__license]:
   #license
-  ":copyright:"
-
-
-By default all Code (including Documentation) are shared under version three (**`3`**) of the GNU AGPL license.
+  "&#x2696; Legal side of Open Source"
 
 
 ```
-Contributing Guidelines for Bash Utilities
-Copyright (C) 2019  S0AndS0
+Dedicated to building Bash tools for scripts tracked by Git.
+Copyright (C) <year> S0AndS0
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
-by the Free Software Foundation; version 3 of the License.
+by the Free Software Foundation, version 3 of the License.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -807,7 +817,11 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 ```
+
+
+For further details review full length version of [AGPL-3.0][branch__current__license] License.
 
 
 ___
@@ -819,29 +833,77 @@ ___
   ""
 
 
-Portions of this document, such as emoji usage, where inspired by [_`contributing.md`_][github__atom__contributing] guidelines from the Atom IDE development team.
+Portions of this document, such as emoji_word usage, where inspired by [_`contributing.md`_][atom__contributing] guidelines from the Atom IDE development team.
+
+Templating of this and other documents within the repository where compiled with [Mustache][mustache_js] _powers_
 
 
 
-[relative_link__issues]: issues
-[relative_link__issues_new]: issues/new
-[relative_link__network_members]: network/members
-[relative_link__support]: SUPPORT.md
+[branch__current__issues]:
+  issues
+  "Please search for existing issues that may be added to or closed"
+
+[branch__current__issues_new]:
+  issues/new
+  "Select the appropriate template when available"
+
+[branch__current__network_members]:
+  network/members
+  "Perhaps you too may be counted amount those that have Forked repositories maintain by Bash Utilities"
+
+[branch__current__support]:
+  SUPPORT.md
+  "Best avenues for seeking support of Bash Utilities"
 
 
-[branch__current__code_of_conduct]: CODE_OF_CONDUCT.md
-[branch__current__bug_report]: ISSUE_TEMPLATE/bug_report.md
-[branch__current__feature_request]: ISSUE_TEMPLATE/feature_request.md
-[branch__current__pull_request]: PULL_REQUEST_TEMPLATE/pull_request_template.md
-[branch__current__readme]: README.md
+[branch__current__code_of_conduct]:
+  CODE_OF_CONDUCT.md
+  "Please do **not** encourage new guidelines to be added"
+
+[branch__current__bug_report]:
+  ISSUE_TEMPLATE/bug_report.md
+  "Create a report to help us improve"
+
+[branch__current__feature_request]:
+  ISSUE_TEMPLATE/feature_request.md
+  "Suggest an idea for this project"
+
+[branch__current__pull_request]:
+  pull_request_template.md
+  "Template for general Pull Request"
+
+[branch__current__pull_request__bug_fix]:
+  PULL_REQUEST_TEMPLATE/bug_fix.md
+  "Template for Pull Request that fixes a bug"
+
+[branch__current__pull_request__feature_addition]:
+  PULL_REQUEST_TEMPLATE/feature_addition.md
+  "Template for Pull Request that adds a feature"
+
+[branch__current__readme]:
+  README.md
+  "Highlights various resources this repository contains"
 
 
-[github__atom__contributing]: https://github.com/atom/atom/blob/master/CONTRIBUTING.md
+[branch__current__license]:
+  /LICENSE
+  "&#x2696; Full length version of AGPL-3.0 License"
 
+
+[branch__current__security]:
+  /SECURITY.md
+  "Best practices for reporting issues of a security related nature"
 
 
 [badge__issues]: https://img.shields.io/github/issues/bash-utilities/.github.svg
+
 [badge__contributors]: https://img.shields.io/github/forks/bash-utilities/.github.svg?color=005571&label=Contributors
 
-
 [badge__support]: https://img.shields.io/badge/&hearts;-Support-lightgray.svg?labelColor=success&color=gray
+
+
+[atom__contributing]: https://github.com/atom/atom/blob/master/CONTRIBUTING.md
+
+[mustache_js]: https://github.com/janl/mustache.js
+
+[jekyll_admin]: https://github.com/S0AndS0/Jekyll_Admin
